@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - E-Clinique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.jpeg" alt="E-Clinique Logo">
+        </a>
+        <h1>Administration</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="speciality.html">Nos spécialités</a></li>
+                    <ul class="dropdown-content">
+                    <li><a href="#">Cardiologie</a></li>
+                    <li><a href="#">Dermatologie</a></li>
+                    <li><a href="#">Pédiatrie</a></li>
+                    <li><a href="#">Neurologie</a></li>
+                    <li><a href="#">Gynecologie</a></li>
+                    </ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="appointment.html">Prendre un rendez-vous</a></li>
+                <li><a href="admin.html">Administration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="admin-section">
+            <h2>Bienvenue dans la section Administration</h2>
+            <div class="admin-roles">
+                <div class="role">
+                    <img src="assets/images/assistant.png" alt="Assistante">
+                    <h3>Assistante</h3>
+                    <p>Gestion des rendez-vous et des communications avec les patients.</p>
+                    <a href="assistant.html" class="admin-button">Accéder</a>
+                </div>
+                <div class="role">
+                    <img src="assets/images/medecin.jpg" alt="Médecin">
+                    <h3>Médecin</h3>
+                    <p>Accéder aux dossiers des patients et gérer les consultations.</p>
+                    <a href="doctor.html" class="admin-button">Accéder</a>
+                </div>
+                <div class="role">
+                    <img src="assets/images/facturation.png" alt="Facturation">
+                    <h3>Facturation</h3>
+                    <p>Gérer les factures et les paiements des patients.</p>
+                    <a href="billing.html" class="admin-button">Accéder</a>
+                </div>
+                <div class="role">
+                    <img src="assets/images/patient.png" alt="Patient">
+                    <h3>Espace Patient</h3>
+                    <p>Accéder à votre dossier médical, prendre des rendez-vous et consulter vos informations.</p>
+                    <a href="patient.html" class="admin-button">Accéder</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div>
+        <a href="login.html?role=medecin">Médecin</a><br>
+        <a href="login.html?role=assistante">Assistante</a><br>
+        <a href="login.html?role=facturation">Facturation</a><br>
+        <a href="login.html?role=patient">Espace Patient</a><br>
+    </div>
+    <footer>
+        <p>&copy; 2024 E-Clinique. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

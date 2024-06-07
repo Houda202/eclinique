@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Patient - E-Clinique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.jpeg" alt="E-Clinique Logo">
+        </a>
+        <h1>Espace Patient</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="specialities.html">Nos spécialités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="appointment.html">Prendre un rendez-vous</a></li>
+                <li><a href="admin.html">Administration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="patient-section">
+            <h2>Bienvenue dans votre espace patient</h2>
+            <p>Connectez-vous pour accéder à votre dossier médical, prendre des rendez-vous et consulter vos informations.</p>
+            <form action="patient_login.php" method="post">
+                <label for="username">Nom d'utilisateur:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Connexion</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-Clinique. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

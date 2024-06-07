@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre un Rendez-vous - E-Clinique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.jpeg" alt="E-Clinique Logo" class="logo">
+        </a>
+        <h1>E-Clinique</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="speciality-old.html">Nos spécialités</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Cardiologie</a></li>
+                        <li><a href="#">Dermatologie</a></li>
+                        <li><a href="#">Pédiatrie</a></li>
+                        <li><a href="#">Neurologie</a></li>
+                        <li><a href="#">Gynecologie</a></li>
+            </ul>
+        </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="appointment.html">Prendre un rendez-vous</a></li>
+                    <ul>
+                <nav>
+                    <nav>
+                        <ul>
+                            <li><a href="admin.html">Administration</a></li>
+                            <li><a href="patient.html">Espace Patient</a></li>  
+                            <ul>
+                            <nav>      
+    </header>
+
+    <main>
+        <section class="appointment-form">
+            <h2>Prendre un Rendez-vous</h2>
+            <form action="submit_appointment.php" method="post">
+                <label for="full-name">Nom et Prénom:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="dob">Date de Naissance:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="sex">Sexe:</label>
+                <select id="sex" name="sex" required>
+                    <option value="male">M</option>
+                    <option value="female">F</option>
+                </select>
+
+                <label for="appointment-date">Date de Rendez-vous:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+
+                <label for="appointment-time">Heure de Rendez-vous:</label>
+                <input type="time" id="appointment-time" name="appointment-time" required>
+
+                <label for="speciality">Spécialité Souhaitée:</label>
+                <select id="speciality" name="speciality" required>
+                    <option value="cardiology">Cardiologie</option>
+                    <option value="dermatology">Dermatologie</option>
+                    <option value="pediatrics">Pédiatrie</option>
+                    <option value="neurology">Neurologie</option>
+                    <option value="gynecology">Gynécologie</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Clinique. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

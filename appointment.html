@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre un Rendez-vous - E-Clinique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.jpeg" alt="E-Clinique Logo" class="logo">
+        </a>
+        <h1>E-Clinique</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="speciality.html">Nos spécialités</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Cardiologie</a></li>
+                        <li><a href="#">Dermatologie</a></li>
+                        <li><a href="#">Pédiatrie</a></li>
+                        <li><a href="#">Neurologie</a></li>
+                        <li><a href="#">Gynécologie</a></li>
+                    </ul>
+                </li>
+                <li><a href="appointment.html">Prendre un rendez-vous</a></li>
+                <li><a href="admin.html">Administration</a></li>
+                <li><a href="patient.html">Espace Patient</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="color: #1f37c2; text-align: center; margin-top: 30px;">Remplissez le formulaire ci-dessous pour prendre un rendez-vous</h2>
+    <form action="submit_demande_rendez_vous.php" method="post">
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom"><br>
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom"><br>
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="telephone">Téléphone :</label><br>
+        <input type="tel" id="telephone" name="telephone"><br>
+        <label for="date_demande">Date de la demande :</label><br>
+        <input type="date" id="date_demande" name="date_demande"><br>
+        <label for="commentaire">Commentaire :</label><br>
+        <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Soumettre">
+    </form>
+    
+</body>
+</html>

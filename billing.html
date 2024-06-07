@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Facturation - E-Clinique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.jpeg" alt="E-Clinique Logo">
+        </a>
+        <h1>Espace Facturation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="specialities.html">Nos spécialités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="appointment.html">Prendre un rendez-vous</a></li>
+                <li><a href="admin.html">Administration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="billing-section">
+            <h2>Bienvenue dans l'espace facturation</h2>
+            <p>Connectez-vous pour gérer les factures et les paiements des patients.</p>
+            <form action="billing_login.php" method="post">
+                <label for="username">Nom d'utilisateur:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Connexion</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-Clinique. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
